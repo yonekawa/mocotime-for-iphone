@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MoCoTimeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MoCoTimeAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		CA1BC89A11999FE90068C82C /* WantToDoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1BC89911999FE90068C82C /* WantToDoDao.m */; };
+		CA1BC8BE1199A5430068C82C /* RemoveWantToDoByKey.sql in Resources */ = {isa = PBXBuildFile; fileRef = CA1BC8BD1199A5430068C82C /* RemoveWantToDoByKey.sql */; };
+		CA1BC8D51199A91F0068C82C /* wanttodo.db in Resources */ = {isa = PBXBuildFile; fileRef = CA1BC8D41199A91F0068C82C /* wanttodo.db */; };
+		CA2F767211A926D0001A3181 /* BuiltinImages.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2F767111A926D0001A3181 /* BuiltinImages.m */; };
+		CA2F775A11A94630001A3181 /* SetAlarmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA2F775911A94630001A3181 /* SetAlarmView.xib */; };
+		CA2F793111A9754D001A3181 /* clockBackgroundWakeup.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2F793011A9754D001A3181 /* clockBackgroundWakeup.png */; };
+		CA2F796C11A97BEB001A3181 /* wakeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA2F796B11A97BEB001A3181 /* wakeup.mp3 */; };
+		CA2F797811A97DCB001A3181 /* wantToDo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA2F797711A97DCB001A3181 /* wantToDo.mp3 */; };
+		CA2F79A511A98559001A3181 /* cameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2F79A411A98559001A3181 /* cameraIcon.png */; };
+		CA3CA92E119EF645009A184C /* EditWantToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3CA92D119EF645009A184C /* EditWantToDoViewController.m */; };
+		CA3CAADD119F1B07009A184C /* EditWantToDoTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3CAADC119F1B07009A184C /* EditWantToDoTitleCell.m */; };
+		CA3CAAE4119F1CAD009A184C /* EditWantToDoTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3CAAE3119F1CAD009A184C /* EditWantToDoTitleCell.xib */; };
+		CA3CAAFF119F1F88009A184C /* EditWantToDoRequiredTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3CAAFE119F1F88009A184C /* EditWantToDoRequiredTimeCell.m */; };
+		CA3CAB0C119F206A009A184C /* EditWantToDoRequiredTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3CAB0B119F206A009A184C /* EditWantToDoRequiredTimeCell.xib */; };
+		CA3CAB99119F2614009A184C /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3CAB98119F2614009A184C /* TextEditViewController.m */; };
+		CA3D70821198607300A262A1 /* DBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D70751198607300A262A1 /* DBConnection.m */; };
+		CA3D70831198607300A262A1 /* DBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D70771198607300A262A1 /* DBFileManager.m */; };
+		CA3D70841198607300A262A1 /* DBRowReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D70791198607300A262A1 /* DBRowReader.m */; };
+		CA3D70851198607300A262A1 /* DBStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D707B1198607300A262A1 /* DBStatement.m */; };
+		CA3D70861198607300A262A1 /* ReadOnlyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D707D1198607300A262A1 /* ReadOnlyTransaction.m */; };
+		CA3D70871198607300A262A1 /* SQLFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D707F1198607300A262A1 /* SQLFinder.m */; };
+		CA3D70881198607300A262A1 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D70811198607300A262A1 /* Transaction.m */; };
+		CA3D70A21198652000A262A1 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D70A01198652000A262A1 /* NSString+Utilities.m */; };
+		CA3D70E3119866C900A262A1 /* AbstractDao.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D70E2119866C900A262A1 /* AbstractDao.m */; };
+		CA40014711A99F0A003BB99D /* CodeSigningEntitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA40014611A99F0A003BB99D /* CodeSigningEntitlements.plist */; };
+		CA4109A711907F6F0016385B /* AlarmController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4109A611907F6F0016385B /* AlarmController.m */; };
+		CA4109AF11907FAE0016385B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4109AE11907FAE0016385B /* AVFoundation.framework */; };
+		CA4109F1119081520016385B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4109F0119081520016385B /* AudioToolbox.framework */; };
+		CA4109F8119083890016385B /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4109F7119083890016385B /* Alarm.m */; };
+		CA410B021191A6DE0016385B /* SleepingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA410B011191A6DE0016385B /* SleepingViewController.m */; };
+		CA410B2F1191A9B00016385B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA410B2E1191A9B00016385B /* libsqlite3.0.dylib */; };
+		CA410B531191ABE40016385B /* wakeupViewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CA410B511191ABE40016385B /* wakeupViewBackground.png */; };
+		CA410B541191ABE40016385B /* sleepingViewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CA410B521191ABE40016385B /* sleepingViewBackground.png */; };
+		CA410BD41191C3350016385B /* NSDate+TimeAndMinuteComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = CA410BD31191C3350016385B /* NSDate+TimeAndMinuteComparison.m */; };
+		CA410BDB1191C8D00016385B /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CA410BDA1191C8D00016385B /* NSDate+Utilities.m */; };
+		CA4F4EBF11A70FAF00A41BD3 /* SleepingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4F4EBE11A70FAF00A41BD3 /* SleepingView.xib */; };
+		CA5F4ABF1185F3D400D468D0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5F4AB41185F3BB00D468D0 /* Default.png */; };
+		CA5F4AC01185F3D400D468D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5F4AB51185F3BB00D468D0 /* icon.png */; };
+		CA5FA98A11A428F200C632BC /* NSFileManager+SaveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5FA98911A428F200C632BC /* NSFileManager+SaveImage.m */; };
+		CA5FA9AB11A42D2900C632BC /* WantToDoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5FA9AA11A42D2900C632BC /* WantToDoListCell.xib */; };
+		CA5FA9C811A42E4900C632BC /* WantToDoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5FA9C711A42E4900C632BC /* WantToDoListCell.m */; };
+		CA5FAA0A11A433EB00C632BC /* GetNextPrimaryKeyOfWantToDo.sql in Resources */ = {isa = PBXBuildFile; fileRef = CA5FA98511A4272E00C632BC /* GetNextPrimaryKeyOfWantToDo.sql */; };
+		CA5FACD711A45A6A00C632BC /* ModifyWantToDo.sql in Resources */ = {isa = PBXBuildFile; fileRef = CA5FAC8A11A4563800C632BC /* ModifyWantToDo.sql */; };
+		CA5FACF111A45BF800C632BC /* GetWantToDoByKey.sql in Resources */ = {isa = PBXBuildFile; fileRef = CA5FACF011A45BF200C632BC /* GetWantToDoByKey.sql */; };
+		CA70C84511A7928F00B1248D /* defaultWantToDoViewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CA70C84411A7928F00B1248D /* defaultWantToDoViewBackground.png */; };
+		CA70C85911A7954A00B1248D /* clockBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CA70C85711A7954A00B1248D /* clockBackground.png */; };
+		CA70C85A11A7954A00B1248D /* wantToDoBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CA70C85811A7954A00B1248D /* wantToDoBackground.png */; };
+		CA763740119FAE760091601F /* NSDate+RequiredTime.m in Sources */ = {isa = PBXBuildFile; fileRef = CA76373F119FAE760091601F /* NSDate+RequiredTime.m */; };
+		CA763753119FB59C0091601F /* RequiredTimeEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA763752119FB59C0091601F /* RequiredTimeEditViewController.m */; };
+		CA763B3211A04AAD0091601F /* EditWantToDoImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA763B3111A04AAD0091601F /* EditWantToDoImageCell.xib */; };
+		CA763B3611A04BC00091601F /* EditWantToDoImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA763B3511A04BC00091601F /* EditWantToDoImageCell.m */; };
+		CA7F124711AC301B003E74A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA7F124211AC301B003E74A0 /* Localizable.strings */; };
+		CA7F124811AC301B003E74A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA7F124511AC301B003E74A0 /* Localizable.strings */; };
+		CA9FFA8C119EB83B00E31045 /* AddWantToDo.sql in Resources */ = {isa = PBXBuildFile; fileRef = CA1BC8AB1199A0BD0068C82C /* AddWantToDo.sql */; };
+		CA9FFA8D119EB84900E31045 /* GetListOfWantToDo.sql in Resources */ = {isa = PBXBuildFile; fileRef = CA1BC8D11199A7C30068C82C /* GetListOfWantToDo.sql */; };
+		CAD0377F1190236D005DFE30 /* SetAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD0377E1190236D005DFE30 /* SetAlarmViewController.m */; };
+		CAD03A1711906228005DFE30 /* WantToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD03A1611906228005DFE30 /* WantToDoListViewController.m */; };
+		CAD5C57911A2F18C0039CA44 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD5C57811A2F18C0039CA44 /* QuartzCore.framework */; };
+		CADDD81311A1A267001C6178 /* goodNightButton_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CADDD81011A1A267001C6178 /* goodNightButton_selected.png */; };
+		CADDD81411A1A267001C6178 /* goodNightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CADDD81111A1A267001C6178 /* goodNightButton.png */; };
+		CADDD81511A1A267001C6178 /* setAlarmViewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CADDD81211A1A267001C6178 /* setAlarmViewBackground.png */; };
+		CAEA471B1188A7BC0042C854 /* WantToDoAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEA471A1188A7BC0042C854 /* WantToDoAlarm.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MoCoTimeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoCoTimeAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MoCoTimeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoCoTimeAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* MoCoTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoCoTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MoCoTime_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoCoTime_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* MoCoTime-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MoCoTime-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		CA1BC89811999FE90068C82C /* WantToDoDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WantToDoDao.h; sourceTree = "<group>"; };
+		CA1BC89911999FE90068C82C /* WantToDoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WantToDoDao.m; sourceTree = "<group>"; };
+		CA1BC8AB1199A0BD0068C82C /* AddWantToDo.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AddWantToDo.sql; sourceTree = "<group>"; };
+		CA1BC8BD1199A5430068C82C /* RemoveWantToDoByKey.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RemoveWantToDoByKey.sql; sourceTree = "<group>"; };
+		CA1BC8D11199A7C30068C82C /* GetListOfWantToDo.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetListOfWantToDo.sql; sourceTree = "<group>"; };
+		CA1BC8D41199A91F0068C82C /* wanttodo.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanttodo.db; sourceTree = "<group>"; };
+		CA2F767011A926D0001A3181 /* BuiltinImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuiltinImages.h; sourceTree = "<group>"; };
+		CA2F767111A926D0001A3181 /* BuiltinImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuiltinImages.m; sourceTree = "<group>"; };
+		CA2F775911A94630001A3181 /* SetAlarmView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetAlarmView.xib; sourceTree = "<group>"; };
+		CA2F793011A9754D001A3181 /* clockBackgroundWakeup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockBackgroundWakeup.png; sourceTree = "<group>"; };
+		CA2F796B11A97BEB001A3181 /* wakeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wakeup.mp3; sourceTree = "<group>"; };
+		CA2F797711A97DCB001A3181 /* wantToDo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wantToDo.mp3; sourceTree = "<group>"; };
+		CA2F79A411A98559001A3181 /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = "<group>"; };
+		CA3CA92C119EF645009A184C /* EditWantToDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWantToDoViewController.h; sourceTree = "<group>"; };
+		CA3CA92D119EF645009A184C /* EditWantToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWantToDoViewController.m; sourceTree = "<group>"; };
+		CA3CAADB119F1B07009A184C /* EditWantToDoTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWantToDoTitleCell.h; sourceTree = "<group>"; };
+		CA3CAADC119F1B07009A184C /* EditWantToDoTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWantToDoTitleCell.m; sourceTree = "<group>"; };
+		CA3CAAE3119F1CAD009A184C /* EditWantToDoTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditWantToDoTitleCell.xib; sourceTree = "<group>"; };
+		CA3CAAFD119F1F88009A184C /* EditWantToDoRequiredTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWantToDoRequiredTimeCell.h; sourceTree = "<group>"; };
+		CA3CAAFE119F1F88009A184C /* EditWantToDoRequiredTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWantToDoRequiredTimeCell.m; sourceTree = "<group>"; };
+		CA3CAB0B119F206A009A184C /* EditWantToDoRequiredTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditWantToDoRequiredTimeCell.xib; sourceTree = "<group>"; };
+		CA3CAB97119F2614009A184C /* TextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditViewController.h; sourceTree = "<group>"; };
+		CA3CAB98119F2614009A184C /* TextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditViewController.m; sourceTree = "<group>"; };
+		CA3CAC2F119F2E30009A184C /* EditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableViewCell.h; sourceTree = "<group>"; };
+		CA3D70741198607300A262A1 /* DBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnection.h; sourceTree = "<group>"; };
+		CA3D70751198607300A262A1 /* DBConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnection.m; sourceTree = "<group>"; };
+		CA3D70761198607300A262A1 /* DBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFileManager.h; sourceTree = "<group>"; };
+		CA3D70771198607300A262A1 /* DBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFileManager.m; sourceTree = "<group>"; };
+		CA3D70781198607300A262A1 /* DBRowReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRowReader.h; sourceTree = "<group>"; };
+		CA3D70791198607300A262A1 /* DBRowReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRowReader.m; sourceTree = "<group>"; };
+		CA3D707A1198607300A262A1 /* DBStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStatement.h; sourceTree = "<group>"; };
+		CA3D707B1198607300A262A1 /* DBStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStatement.m; sourceTree = "<group>"; };
+		CA3D707C1198607300A262A1 /* ReadOnlyTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadOnlyTransaction.h; sourceTree = "<group>"; };
+		CA3D707D1198607300A262A1 /* ReadOnlyTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadOnlyTransaction.m; sourceTree = "<group>"; };
+		CA3D707E1198607300A262A1 /* SQLFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLFinder.h; sourceTree = "<group>"; };
+		CA3D707F1198607300A262A1 /* SQLFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLFinder.m; sourceTree = "<group>"; };
+		CA3D70801198607300A262A1 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		CA3D70811198607300A262A1 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		CA3D709F1198652000A262A1 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		CA3D70A01198652000A262A1 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		CA3D70E1119866C900A262A1 /* AbstractDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDao.h; sourceTree = "<group>"; };
+		CA3D70E2119866C900A262A1 /* AbstractDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractDao.m; sourceTree = "<group>"; };
+		CA40014611A99F0A003BB99D /* CodeSigningEntitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CodeSigningEntitlements.plist; sourceTree = "<group>"; };
+		CA4109A511907F6F0016385B /* AlarmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmController.h; sourceTree = "<group>"; };
+		CA4109A611907F6F0016385B /* AlarmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmController.m; sourceTree = "<group>"; };
+		CA4109AE11907FAE0016385B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CA4109F0119081520016385B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CA4109F6119083890016385B /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
+		CA4109F7119083890016385B /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
+		CA410B001191A6DE0016385B /* SleepingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepingViewController.h; sourceTree = "<group>"; };
+		CA410B011191A6DE0016385B /* SleepingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepingViewController.m; sourceTree = "<group>"; };
+		CA410B2E1191A9B00016385B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		CA410B511191ABE40016385B /* wakeupViewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wakeupViewBackground.png; sourceTree = "<group>"; };
+		CA410B521191ABE40016385B /* sleepingViewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleepingViewBackground.png; sourceTree = "<group>"; };
+		CA410BD21191C3350016385B /* NSDate+TimeAndMinuteComparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAndMinuteComparison.h"; sourceTree = "<group>"; };
+		CA410BD31191C3350016385B /* NSDate+TimeAndMinuteComparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAndMinuteComparison.m"; sourceTree = "<group>"; };
+		CA410BD91191C8D00016385B /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		CA410BDA1191C8D00016385B /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		CA4B30931185EBD600D159C6 /* Unit Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Test-Info.plist"; sourceTree = "<group>"; };
+		CA4F4BAB11A6E49F00A41BD3 /* AlarmType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmType.h; sourceTree = "<group>"; };
+		CA4F4EBE11A70FAF00A41BD3 /* SleepingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepingView.xib; sourceTree = "<group>"; };
+		CA5F4AB41185F3BB00D468D0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CA5F4AB51185F3BB00D468D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CA5FA98511A4272E00C632BC /* GetNextPrimaryKeyOfWantToDo.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetNextPrimaryKeyOfWantToDo.sql; sourceTree = "<group>"; };
+		CA5FA98811A428F200C632BC /* NSFileManager+SaveImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+SaveImage.h"; sourceTree = "<group>"; };
+		CA5FA98911A428F200C632BC /* NSFileManager+SaveImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+SaveImage.m"; sourceTree = "<group>"; };
+		CA5FA9AA11A42D2900C632BC /* WantToDoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WantToDoListCell.xib; sourceTree = "<group>"; };
+		CA5FA9C611A42E4900C632BC /* WantToDoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WantToDoListCell.h; sourceTree = "<group>"; };
+		CA5FA9C711A42E4900C632BC /* WantToDoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WantToDoListCell.m; sourceTree = "<group>"; };
+		CA5FAC8A11A4563800C632BC /* ModifyWantToDo.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ModifyWantToDo.sql; sourceTree = "<group>"; };
+		CA5FACF011A45BF200C632BC /* GetWantToDoByKey.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetWantToDoByKey.sql; sourceTree = "<group>"; };
+		CA70C84411A7928F00B1248D /* defaultWantToDoViewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultWantToDoViewBackground.png; sourceTree = "<group>"; };
+		CA70C85711A7954A00B1248D /* clockBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockBackground.png; sourceTree = "<group>"; };
+		CA70C85811A7954A00B1248D /* wantToDoBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wantToDoBackground.png; sourceTree = "<group>"; };
+		CA76373E119FAE760091601F /* NSDate+RequiredTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RequiredTime.h"; sourceTree = "<group>"; };
+		CA76373F119FAE760091601F /* NSDate+RequiredTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RequiredTime.m"; sourceTree = "<group>"; };
+		CA763751119FB59C0091601F /* RequiredTimeEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequiredTimeEditViewController.h; sourceTree = "<group>"; };
+		CA763752119FB59C0091601F /* RequiredTimeEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequiredTimeEditViewController.m; sourceTree = "<group>"; };
+		CA763B3111A04AAD0091601F /* EditWantToDoImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditWantToDoImageCell.xib; sourceTree = "<group>"; };
+		CA763B3411A04BC00091601F /* EditWantToDoImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWantToDoImageCell.h; sourceTree = "<group>"; };
+		CA763B3511A04BC00091601F /* EditWantToDoImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWantToDoImageCell.m; sourceTree = "<group>"; };
+		CA7F124311AC301B003E74A0 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		CA7F124611AC301B003E74A0 /* ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ja; path = Localizable.strings; sourceTree = "<group>"; };
+		CAD0377D1190236D005DFE30 /* SetAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController.h; sourceTree = "<group>"; };
+		CAD0377E1190236D005DFE30 /* SetAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController.m; sourceTree = "<group>"; };
+		CAD03A1511906228005DFE30 /* WantToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WantToDoListViewController.h; sourceTree = "<group>"; };
+		CAD03A1611906228005DFE30 /* WantToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WantToDoListViewController.m; sourceTree = "<group>"; };
+		CAD5C57811A2F18C0039CA44 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CADDD81011A1A267001C6178 /* goodNightButton_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goodNightButton_selected.png; sourceTree = "<group>"; };
+		CADDD81111A1A267001C6178 /* goodNightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goodNightButton.png; sourceTree = "<group>"; };
+		CADDD81211A1A267001C6178 /* setAlarmViewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setAlarmViewBackground.png; sourceTree = "<group>"; };
+		CAEA47191188A7BC0042C854 /* WantToDoAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WantToDoAlarm.h; sourceTree = "<group>"; };
+		CAEA471A1188A7BC0042C854 /* WantToDoAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WantToDoAlarm.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				CA4109AF11907FAE0016385B /* AVFoundation.framework in Frameworks */,
+				CA4109F1119081520016385B /* AudioToolbox.framework in Frameworks */,
+				CA410B2F1191A9B00016385B /* libsqlite3.0.dylib in Frameworks */,
+				CAD5C57911A2F18C0039CA44 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CAEA46D61188A5B30042C854 /* ThirdParty */,
+				CAAAB85C1185E12F001563AB /* Models */,
+				CAAAB85B1185E121001563AB /* Views */,
+				CAAAB85A1185E119001563AB /* ViewControllers */,
+				1D3623240D0F684500981E51 /* MoCoTimeAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MoCoTimeAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MoCoTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				CA7F120911AC2D75003E74A0 /* Localization */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MoCoTime_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CAAE2119F1C9C009A184C /* Nib */,
+				CA1BC8D31199A9120068C82C /* Databases */,
+				CA1BC8A71199A0840068C82C /* SQL */,
+				CA70C81711A78C9000B1248D /* Sounds */,
+				CA410B551191ABE70016385B /* Images */,
+				CA4B30931185EBD600D159C6 /* Unit Test-Info.plist */,
+				8D1107310486CEB800E47090 /* MoCoTime-Info.plist */,
+				CA40014611A99F0A003BB99D /* CodeSigningEntitlements.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				CA4109AE11907FAE0016385B /* AVFoundation.framework */,
+				CA4109F0119081520016385B /* AudioToolbox.framework */,
+				CA410B2E1191A9B00016385B /* libsqlite3.0.dylib */,
+				CAD5C57811A2F18C0039CA44 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA1BC8A71199A0840068C82C /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				CA1BC8AB1199A0BD0068C82C /* AddWantToDo.sql */,
+				CA5FAC8A11A4563800C632BC /* ModifyWantToDo.sql */,
+				CA1BC8BD1199A5430068C82C /* RemoveWantToDoByKey.sql */,
+				CA1BC8D11199A7C30068C82C /* GetListOfWantToDo.sql */,
+				CA5FA98511A4272E00C632BC /* GetNextPrimaryKeyOfWantToDo.sql */,
+				CA5FACF011A45BF200C632BC /* GetWantToDoByKey.sql */,
+			);
+			name = SQL;
+			sourceTree = "<group>";
+		};
+		CA1BC8D31199A9120068C82C /* Databases */ = {
+			isa = PBXGroup;
+			children = (
+				CA1BC8D41199A91F0068C82C /* wanttodo.db */,
+			);
+			name = Databases;
+			sourceTree = "<group>";
+		};
+		CA3CAAE2119F1C9C009A184C /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				CA5FA9A911A42D0C00C632BC /* Cells */,
+				CA4F4EBE11A70FAF00A41BD3 /* SleepingView.xib */,
+				CA2F775911A94630001A3181 /* SetAlarmView.xib */,
+			);
+			name = Nib;
+			sourceTree = "<group>";
+		};
+		CA3CAB96119F25F6009A184C /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CAB97119F2614009A184C /* TextEditViewController.h */,
+				CA3CAB98119F2614009A184C /* TextEditViewController.m */,
+				CA763751119FB59C0091601F /* RequiredTimeEditViewController.h */,
+				CA763752119FB59C0091601F /* RequiredTimeEditViewController.m */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
+		CA3D70731198602500A262A1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CA3D70761198607300A262A1 /* DBFileManager.h */,
+				CA3D70771198607300A262A1 /* DBFileManager.m */,
+				CA3D70741198607300A262A1 /* DBConnection.h */,
+				CA3D70751198607300A262A1 /* DBConnection.m */,
+				CA3D707A1198607300A262A1 /* DBStatement.h */,
+				CA3D707B1198607300A262A1 /* DBStatement.m */,
+				CA3D70781198607300A262A1 /* DBRowReader.h */,
+				CA3D70791198607300A262A1 /* DBRowReader.m */,
+				CA3D70801198607300A262A1 /* Transaction.h */,
+				CA3D70811198607300A262A1 /* Transaction.m */,
+				CA3D707C1198607300A262A1 /* ReadOnlyTransaction.h */,
+				CA3D707D1198607300A262A1 /* ReadOnlyTransaction.m */,
+				CA3D707E1198607300A262A1 /* SQLFinder.h */,
+				CA3D707F1198607300A262A1 /* SQLFinder.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		CA3D70E0119866A500A262A1 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				CA3D70E1119866C900A262A1 /* AbstractDao.h */,
+				CA3D70E2119866C900A262A1 /* AbstractDao.m */,
+				CA1BC89811999FE90068C82C /* WantToDoDao.h */,
+				CA1BC89911999FE90068C82C /* WantToDoDao.m */,
+			);
+			name = Dao;
+			sourceTree = "<group>";
+		};
+		CA4109A111907F600016385B /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				CA4F4BAB11A6E49F00A41BD3 /* AlarmType.h */,
+				CA4109A511907F6F0016385B /* AlarmController.h */,
+				CA4109A611907F6F0016385B /* AlarmController.m */,
+			);
+			name = Alarm;
+			sourceTree = "<group>";
+		};
+		CA410B3C1191AA640016385B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F767011A926D0001A3181 /* BuiltinImages.h */,
+				CA2F767111A926D0001A3181 /* BuiltinImages.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		CA410B551191ABE70016385B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F79A411A98559001A3181 /* cameraIcon.png */,
+				CA2F793011A9754D001A3181 /* clockBackgroundWakeup.png */,
+				CA70C85711A7954A00B1248D /* clockBackground.png */,
+				CA70C85811A7954A00B1248D /* wantToDoBackground.png */,
+				CA70C84411A7928F00B1248D /* defaultWantToDoViewBackground.png */,
+				CADDD81011A1A267001C6178 /* goodNightButton_selected.png */,
+				CADDD81111A1A267001C6178 /* goodNightButton.png */,
+				CADDD81211A1A267001C6178 /* setAlarmViewBackground.png */,
+				CA410B511191ABE40016385B /* wakeupViewBackground.png */,
+				CA410B521191ABE40016385B /* sleepingViewBackground.png */,
+				CA5F4AB41185F3BB00D468D0 /* Default.png */,
+				CA5F4AB51185F3BB00D468D0 /* icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		CA410BD11191C3090016385B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CA3D709F1198652000A262A1 /* NSString+Utilities.h */,
+				CA3D70A01198652000A262A1 /* NSString+Utilities.m */,
+				CA410BD21191C3350016385B /* NSDate+TimeAndMinuteComparison.h */,
+				CA410BD31191C3350016385B /* NSDate+TimeAndMinuteComparison.m */,
+				CA76373E119FAE760091601F /* NSDate+RequiredTime.h */,
+				CA76373F119FAE760091601F /* NSDate+RequiredTime.m */,
+				CA5FA98811A428F200C632BC /* NSFileManager+SaveImage.h */,
+				CA5FA98911A428F200C632BC /* NSFileManager+SaveImage.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		CA5FA9A911A42D0C00C632BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CA5FA9AA11A42D2900C632BC /* WantToDoListCell.xib */,
+				CA3CAAE3119F1CAD009A184C /* EditWantToDoTitleCell.xib */,
+				CA3CAB0B119F206A009A184C /* EditWantToDoRequiredTimeCell.xib */,
+				CA763B3111A04AAD0091601F /* EditWantToDoImageCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CA5FA9C911A42E5200C632BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CA5FA9C611A42E4900C632BC /* WantToDoListCell.h */,
+				CA5FA9C711A42E4900C632BC /* WantToDoListCell.m */,
+				CA3CAC2F119F2E30009A184C /* EditTableViewCell.h */,
+				CA3CAADB119F1B07009A184C /* EditWantToDoTitleCell.h */,
+				CA3CAADC119F1B07009A184C /* EditWantToDoTitleCell.m */,
+				CA3CAAFD119F1F88009A184C /* EditWantToDoRequiredTimeCell.h */,
+				CA3CAAFE119F1F88009A184C /* EditWantToDoRequiredTimeCell.m */,
+				CA763B3411A04BC00091601F /* EditWantToDoImageCell.h */,
+				CA763B3511A04BC00091601F /* EditWantToDoImageCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CA70C81711A78C9000B1248D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F797711A97DCB001A3181 /* wantToDo.mp3 */,
+				CA2F796B11A97BEB001A3181 /* wakeup.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		CA7F120911AC2D75003E74A0 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CA7F124111AC301B003E74A0 /* en.lproj */,
+				CA7F124411AC301B003E74A0 /* ja.lproj */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		CA7F124111AC301B003E74A0 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CA7F124211AC301B003E74A0 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		CA7F124411AC301B003E74A0 /* ja.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CA7F124511AC301B003E74A0 /* Localizable.strings */,
+			);
+			path = ja.lproj;
+			sourceTree = "<group>";
+		};
+		CAAAB85A1185E119001563AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CAB96119F25F6009A184C /* Edit */,
+				CA410B001191A6DE0016385B /* SleepingViewController.h */,
+				CA410B011191A6DE0016385B /* SleepingViewController.m */,
+				CAD0377D1190236D005DFE30 /* SetAlarmViewController.h */,
+				CAD0377E1190236D005DFE30 /* SetAlarmViewController.m */,
+				CAD03A1511906228005DFE30 /* WantToDoListViewController.h */,
+				CAD03A1611906228005DFE30 /* WantToDoListViewController.m */,
+				CA3CA92C119EF645009A184C /* EditWantToDoViewController.h */,
+				CA3CA92D119EF645009A184C /* EditWantToDoViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CAAAB85B1185E121001563AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA5FA9C911A42E5200C632BC /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CAAAB85C1185E12F001563AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAEA47161188A6C60042C854 /* Entities */,
+				CA3D70E0119866A500A262A1 /* Dao */,
+				CA3D70731198602500A262A1 /* Database */,
+				CA410BD11191C3090016385B /* Foundation */,
+				CA410B3C1191AA640016385B /* Image */,
+				CA4109A111907F600016385B /* Alarm */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CAEA46D61188A5B30042C854 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				CA410BD91191C8D00016385B /* NSDate+Utilities.h */,
+				CA410BDA1191C8D00016385B /* NSDate+Utilities.m */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		CAEA47161188A6C60042C854 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CA4109F6119083890016385B /* Alarm.h */,
+				CA4109F7119083890016385B /* Alarm.m */,
+				CAEA47191188A7BC0042C854 /* WantToDoAlarm.h */,
+				CAEA471A1188A7BC0042C854 /* WantToDoAlarm.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MoCoTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MoCoTime" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoCoTime;
+			productName = MoCoTime;
+			productReference = 1D6058910D05DD3D006BFB54 /* MoCoTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MoCoTime" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				da,
+				de,
+				en,
+				es,
+				fi,
+				fr,
+				it,
+				ja,
+				ko,
+				nl,
+				no,
+				pl,
+				pt,
+				ru,
+				sv,
+				zh_CN,
+				zh_TW,
+				ja_JP,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MoCoTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5F4ABF1185F3D400D468D0 /* Default.png in Resources */,
+				CA5F4AC01185F3D400D468D0 /* icon.png in Resources */,
+				CA410B531191ABE40016385B /* wakeupViewBackground.png in Resources */,
+				CA410B541191ABE40016385B /* sleepingViewBackground.png in Resources */,
+				CA1BC8BE1199A5430068C82C /* RemoveWantToDoByKey.sql in Resources */,
+				CA1BC8D51199A91F0068C82C /* wanttodo.db in Resources */,
+				CA9FFA8C119EB83B00E31045 /* AddWantToDo.sql in Resources */,
+				CA9FFA8D119EB84900E31045 /* GetListOfWantToDo.sql in Resources */,
+				CA3CAAE4119F1CAD009A184C /* EditWantToDoTitleCell.xib in Resources */,
+				CA3CAB0C119F206A009A184C /* EditWantToDoRequiredTimeCell.xib in Resources */,
+				CA763B3211A04AAD0091601F /* EditWantToDoImageCell.xib in Resources */,
+				CADDD81311A1A267001C6178 /* goodNightButton_selected.png in Resources */,
+				CADDD81411A1A267001C6178 /* goodNightButton.png in Resources */,
+				CADDD81511A1A267001C6178 /* setAlarmViewBackground.png in Resources */,
+				CA5FA9AB11A42D2900C632BC /* WantToDoListCell.xib in Resources */,
+				CA5FAA0A11A433EB00C632BC /* GetNextPrimaryKeyOfWantToDo.sql in Resources */,
+				CA5FACD711A45A6A00C632BC /* ModifyWantToDo.sql in Resources */,
+				CA5FACF111A45BF800C632BC /* GetWantToDoByKey.sql in Resources */,
+				CA4F4EBF11A70FAF00A41BD3 /* SleepingView.xib in Resources */,
+				CA70C84511A7928F00B1248D /* defaultWantToDoViewBackground.png in Resources */,
+				CA70C85911A7954A00B1248D /* clockBackground.png in Resources */,
+				CA70C85A11A7954A00B1248D /* wantToDoBackground.png in Resources */,
+				CA2F775A11A94630001A3181 /* SetAlarmView.xib in Resources */,
+				CA2F793111A9754D001A3181 /* clockBackgroundWakeup.png in Resources */,
+				CA2F796C11A97BEB001A3181 /* wakeup.mp3 in Resources */,
+				CA2F797811A97DCB001A3181 /* wantToDo.mp3 in Resources */,
+				CA2F79A511A98559001A3181 /* cameraIcon.png in Resources */,
+				CA40014711A99F0A003BB99D /* CodeSigningEntitlements.plist in Resources */,
+				CA7F124711AC301B003E74A0 /* Localizable.strings in Resources */,
+				CA7F124811AC301B003E74A0 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MoCoTimeAppDelegate.m in Sources */,
+				CAEA471B1188A7BC0042C854 /* WantToDoAlarm.m in Sources */,
+				CAD0377F1190236D005DFE30 /* SetAlarmViewController.m in Sources */,
+				CAD03A1711906228005DFE30 /* WantToDoListViewController.m in Sources */,
+				CA4109A711907F6F0016385B /* AlarmController.m in Sources */,
+				CA4109F8119083890016385B /* Alarm.m in Sources */,
+				CA410B021191A6DE0016385B /* SleepingViewController.m in Sources */,
+				CA410BD41191C3350016385B /* NSDate+TimeAndMinuteComparison.m in Sources */,
+				CA410BDB1191C8D00016385B /* NSDate+Utilities.m in Sources */,
+				CA3D70821198607300A262A1 /* DBConnection.m in Sources */,
+				CA3D70831198607300A262A1 /* DBFileManager.m in Sources */,
+				CA3D70841198607300A262A1 /* DBRowReader.m in Sources */,
+				CA3D70851198607300A262A1 /* DBStatement.m in Sources */,
+				CA3D70861198607300A262A1 /* ReadOnlyTransaction.m in Sources */,
+				CA3D70871198607300A262A1 /* SQLFinder.m in Sources */,
+				CA3D70881198607300A262A1 /* Transaction.m in Sources */,
+				CA3D70A21198652000A262A1 /* NSString+Utilities.m in Sources */,
+				CA3D70E3119866C900A262A1 /* AbstractDao.m in Sources */,
+				CA1BC89A11999FE90068C82C /* WantToDoDao.m in Sources */,
+				CA3CA92E119EF645009A184C /* EditWantToDoViewController.m in Sources */,
+				CA3CAADD119F1B07009A184C /* EditWantToDoTitleCell.m in Sources */,
+				CA3CAAFF119F1F88009A184C /* EditWantToDoRequiredTimeCell.m in Sources */,
+				CA3CAB99119F2614009A184C /* TextEditViewController.m in Sources */,
+				CA763740119FAE760091601F /* NSDate+RequiredTime.m in Sources */,
+				CA763753119FB59C0091601F /* RequiredTimeEditViewController.m in Sources */,
+				CA763B3611A04BC00091601F /* EditWantToDoImageCell.m in Sources */,
+				CA5FA98A11A428F200C632BC /* NSFileManager+SaveImage.m in Sources */,
+				CA5FA9C811A42E4900C632BC /* WantToDoListCell.m in Sources */,
+				CA2F767211A926D0001A3181 /* BuiltinImages.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA7F124211AC301B003E74A0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA7F124311AC301B003E74A0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CA7F124511AC301B003E74A0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA7F124611AC301B003E74A0 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
+				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
+				);
+				PRODUCT_NAME = MoCoTime;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
+				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
+				);
+				PRODUCT_NAME = MoCoTime;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		CA3DB30F11A7313100914ACF /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kenichi Yonekawa";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "849E03D2-35C1-4799-94B9-D223AD5301B8";
+				SDKROOT = iphoneos4.0;
+			};
+			name = "App Store";
+		};
+		CA3DB31011A7313100914ACF /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
+				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
+				);
+				PRODUCT_NAME = MoCoTime;
+				SDKROOT = iphoneos;
+			};
+			name = "App Store";
+		};
+		CA40014211A99E95003BB99D /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Resources/CodeSIgningEntitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kenichi Yonekawa";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AC1300C-EE88-4FB1-B78E-81549A1AA764";
+				SDKROOT = iphoneos4.0;
+			};
+			name = AdHoc;
+		};
+		CA40014311A99E95003BB99D /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
+				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
+				);
+				PRODUCT_NAME = MoCoTime;
+				SDKROOT = iphoneos;
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MoCoTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				CA40014311A99E95003BB99D /* AdHoc */,
+				CA3DB31011A7313100914ACF /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MoCoTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				CA40014211A99E95003BB99D /* AdHoc */,
+				CA3DB30F11A7313100914ACF /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

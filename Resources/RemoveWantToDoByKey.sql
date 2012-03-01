@@ -1,0 +1,1 @@
+DELETE FROM tab_mocotime_wanttodo WHERE _id = ?;
