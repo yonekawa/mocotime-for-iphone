@@ -688,10 +688,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
 				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = MoCoTime;
 				SDKROOT = iphoneos;
 			};
@@ -705,10 +702,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
 				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = MoCoTime;
 				SDKROOT = iphoneos;
 			};
@@ -765,10 +759,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
 				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = MoCoTime;
 				SDKROOT = iphoneos;
 			};
@@ -798,10 +789,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoCoTime_Prefix.pch;
 				INFOPLIST_FILE = "Resources/MoCoTime-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/google-toolbox/TigerGcov\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = MoCoTime;
 				SDKROOT = iphoneos;
 			};

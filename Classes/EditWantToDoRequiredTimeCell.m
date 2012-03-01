@@ -9,7 +9,7 @@
 #import "EditWantToDoRequiredTimeCell.h"
 #import "WantToDoAlarm.h"
 #import "NSDate+Utilities.h"
-#import "NSDate+RequiredTime.h";
+#import "NSDate+RequiredTime.h"
 
 @implementation EditWantToDoRequiredTimeCell
 @synthesize requiredTimeLabel = requiredTimeLabel_;
